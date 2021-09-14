@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: var(--a-Color);
+  user-select: none; 
+}
+
+:root {
+  --a-Color: #4a403a;
+  --b-Color: #a45d5d;
+  --c-Color: #ffc069;
+  --d-Color: #efefef;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  width: 100%;
+  background-color: var(--a-Color);
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  border-bottom: var(--c-Color) 2px solid;
+  margin-bottom: 20px;
+}
+
+.header .titleContainer {
+  width: 30%;
+  background-color: var(--c-Color);
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  box-shadow: -14px 15px 8px -7px rgba(0, 0, 0, 0.74);
+}
+
+
+
+.main {
+  height: 65vh;
+  background-color: var(--a-Color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .pointsContainer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.main .pointsPlayerContainer,
+.pointsEnemyContainer {
+  width: 19%;
+  height: 100%;
+  background-color: var(--c-Color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -14px 15px 8px -7px rgba(0, 0, 0, 0.74);
+  border-radius: 6px;
+}
+
+.main .playerContainer,
+.enemyContainer {
+  width: 65%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--b-Color);
+  box-shadow: -5px 8px 12px -1px rgba(0, 0, 0, 0.44);
+  height: 60px;
+  border-radius: 25px;
+}
+
+.main .playerElection,
+.enemyElection {
+  width: 30%;
+  display: flex;
+}
+
+.main .playerElection img,
+.enemyElection img {
+  width: 50px;
+  margin-left: auto;
+}
+
+.main .boxContainer {
+  width: 42%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main .btnBox {
+  background-color: var(--c-Color);
+  width: 23%;
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -14px 15px 8px -7px rgba(0, 0, 0, 0.74);
+  border-radius: 6px;
+}
+
+.main .figBox {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--b-Color);
+  height: 70%;
+  cursor: pointer;
+  box-shadow: -5px 8px 12px -1px rgba(0, 0, 0, 0.44);
+  transition: all 200ms;
+}
+
+.main .figBox:hover{
+  border: solid 1px black;
+  box-shadow: -3px 4px 7px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.main .figBox img {
+  transition: all  700ms;
+  }
+
+.main .figBox:hover img {
+transform: translateY(-8px);
+}
+
+
+
+.footer {
+  background-color: var(--a-Color);
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: var(--c-Color) 2px solid;
+  margin-top: 20px;
+}
+
+.footer .messageContainer {
+  width: 40%;
+  background-color: var(--c-Color);
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  box-shadow: -14px 15px 8px -7px rgba(0, 0, 0, 0.74);
+}
+
+.resetContainer {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+z-index: 1000;}
+
+.reset {
+  width: 30%;
+  height: 200px;
+  background-color: var(--c-Color);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.reset .resetContent{
+  text-align: justify;
+  padding: 20px;
+}
+
+.resetBtn {
+  display: block;
+  padding: 8px;
+  background: var(--b-Color);
+  width: 50%;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.show {
+  display: flex;
+  opacity: 1;
+}
