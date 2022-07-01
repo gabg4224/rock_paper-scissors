@@ -10,7 +10,7 @@ titulo = document.createElement("H1");
 titleContainer.classList.add("titleContainer");
 titulo.classList.add("title");
 
-titulo.innerHTML = "Let's play SUCKERS!!";
+titulo.innerHTML = "Let's play!";
 header.appendChild(titleContainer);
 titleContainer.appendChild(titulo);
 
