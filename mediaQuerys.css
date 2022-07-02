@@ -1,0 +1,27 @@
+@media only screen and (max-width: 650px) {  
+
+    .header .titleContainer {
+        width: 50%;
+        height: 42%;
+      }
+
+
+    .main .pointsPlayerContainer,
+    .pointsEnemyContainer {
+ min-width: 9rem;
+    }
+
+
+    .main .playerContainer,
+.enemyContainer {
+width: 90%;
+}
+
+
+.footer .messageContainer {
+    width: 80%;
+  }
+
+}  
+
+

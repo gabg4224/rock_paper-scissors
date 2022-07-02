@@ -28,7 +28,6 @@ let pointsContainer = document.createElement("DIV"),
   enemyElection = document.createElement("SPAN");
 
 //---------------------Main.first-------------------------------
-
 pointsContainer.classList.add("pointsContainer");
 pointsPlayerContainer.classList.add("pointsPlayerContainer");
 playerContainer.classList.add("playerContainer");
@@ -96,9 +95,9 @@ boxContainer.appendChild(scissorBoxContainer);
 
 main.appendChild(boxContainer);
 
-rockBox.innerHTML = `<img src="..//rock_paper-scissors/rock.svg" alt="img de tijera" width = 60px>`;
-paperBox.innerHTML = `<img src="..//rock_paper-scissors/paper.svg" alt="img de tijera" width = 60px>`;
-scissorBox.innerHTML = `<img src="..//rock_paper-scissors/scissors.svg" alt="img de tijera" width = 60px>`;
+rockBox.innerHTML = `<img src="./rock.svg" alt="img de tijera" width = 60px>`;
+paperBox.innerHTML = `<img src="./paper.svg" alt="img de tijera" width = 60px>`;
+scissorBox.innerHTML = `<img src="./scissors.svg" alt="img de tijera" width = 60px>`;
 
 //---------------------Footer--------------------------------
 
@@ -125,8 +124,8 @@ let resetContainer = document.querySelector("#resetContainer"),
 
 rockBox.addEventListener("click", () => {
   let pase = game("rock");
-  playerElection.innerHTML = `<img src="..//rock_paper-scissors/rock.svg" alt="roca">`;
-  enemyElection.innerHTML = `<img src="..//rock_paper-scissors/${compuSelect}.svg" alt="${compuSelect}">`;
+  playerElection.innerHTML = `<img src="./rock.svg" alt="roca">`;
+  enemyElection.innerHTML = `<img src="./${compuSelect}.svg" alt="${compuSelect}">`;
   pase == "tie"
     ? (message.innerHTML = `<h2>it's a TIE!!</h2>`)
     : (message.innerHTML = `<h2>${pase}</h2>`);
@@ -138,8 +137,8 @@ rockBox.addEventListener("click", () => {
 
 paperBox.addEventListener("click", () => {
   let pase = game("paper");
-  playerElection.innerHTML = `<img src="..//rock_paper-scissors/paper.svg" alt="roca">`;
-  enemyElection.innerHTML = `<img src="..//rock_paper-scissors/${compuSelect}.svg" alt="${compuSelect}">`;
+  playerElection.innerHTML = `<img src="./paper.svg" alt="roca">`;
+  enemyElection.innerHTML = `<img src="./${compuSelect}.svg" alt="${compuSelect}">`;
 
   pase == "tie"
     ? (message.innerHTML = `<h2>it's a TIE!!</h2>`)
@@ -151,8 +150,8 @@ paperBox.addEventListener("click", () => {
 
 scissorBox.addEventListener("click", () => {
   let pase = game("scissors");
-  playerElection.innerHTML = `<img src="..//rock_paper-scissors/scissors.svg" alt="roca">`;
-  enemyElection.innerHTML = `<img src="..//rock_paper-scissors/${compuSelect}.svg" alt="${compuSelect}">`;
+  playerElection.innerHTML = `<img src="./scissors.svg" alt="roca">`;
+  enemyElection.innerHTML = `<img src="./${compuSelect}.svg" alt="${compuSelect}">`;
 
   pase == "tie"
     ? (message.innerHTML = `<h2>it's a TIE!!</h2>`)
