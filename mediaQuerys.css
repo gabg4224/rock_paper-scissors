@@ -1,27 +1,46 @@
-@media only screen and (max-width: 650px) {  
-
-    .header .titleContainer {
-        width: 50%;
-        height: 42%;
-      }
-
-
-    .main .pointsPlayerContainer,
-    .pointsEnemyContainer {
- min-width: 9rem;
-    }
-
-
-    .main .playerContainer,
-.enemyContainer {
-width: 90%;
-}
-
-
-.footer .messageContainer {
-    width: 80%;
+@media screen and (max-width: 650px) {
+  .header .titleContainer {
+    width: 50%;
+    height: 42%;
   }
 
-}  
+  .main .pointsPlayerContainer,
+  .pointsEnemyContainer {
+    min-width: 9rem;
+  }
 
+  .main .playerContainer,
+  .enemyContainer {
+    width: 90%;
+  }
+  .main .boxContainer {
+    gap: 0.8rem;
+    width: 80%;
+  }
+  .main .btnBox {
+    min-width: 7rem;
+  }
 
+  .footer .messageContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  
+  .main .boxContainer {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.7rem;
+  }
+
+  .main  .btnBox {
+    min-width: 18rem;
+    height: 4rem;
+  }
+
+  .main .figBox img {
+    width: 2rem;
+  }
+}
